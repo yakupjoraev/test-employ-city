@@ -1,0 +1,140 @@
+.hero {
+  padding: 200px 0;
+  background-image: url('../img/hero/hero-bg.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 850px;
+  height: auto;
+
+  @media (max-width: $breakpoint992) {
+    max-width: 970px;
+    padding: 150px 0;
+    min-height: 650px;
+  }
+
+
+  @media (max-width: $breakpoint768) {
+    background-position: left;
+    padding: 100px 0;
+  }
+
+  // .hero__inner
+
+  &__inner {}
+
+  // .hero__title
+
+  &__title {
+    max-width: 780px;
+    margin-bottom: 80px;
+    color: #000;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+
+    span {
+      color: var(--primary-color);
+    }
+
+    @media (max-width: $breakpoint992) {
+      max-width: 600px;
+      margin-bottom: 40px;
+      font-size: 38px;
+    }
+
+
+    @media (max-width: $breakpoint768) {
+      font-size: 26px;
+
+      br {
+        display: none;
+      }
+    }
+  }
+
+  // .hero__subtitle
+
+  &__subtitle {
+    margin-bottom: 10px;
+    color: #000;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: normal;
+
+    @media (max-width: $breakpoint992) {
+      font-size: 18px;
+    }
+  }
+
+  // .hero__benifits
+
+  &__benifits {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    max-width: 800px;
+    margin-bottom: 80px;
+
+    @media (max-width: $breakpoint992) {
+      max-width: 600px;
+      margin-bottom: 40px;
+    }
+  }
+
+  // .hero__benifits-item
+
+  &__benifits-item {
+    position: relative;
+    display: grid;
+    grid-template-columns: 25px 1fr;
+
+    color: #000;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: normal;
+
+    &::before {
+      content: '';
+      left: 0;
+      top: 0;
+      display: block;
+      margin: 10px;
+      width: 5px;
+      height: 1.5px;
+      background-color: #000;
+    }
+
+    @media (max-width: $breakpoint992) {
+      font-size: 18px;
+    }
+  }
+
+  // .hero__links
+
+  &__links {
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+    row-gap: 30px;
+
+
+    @media (max-width: $breakpoint480) {
+      flex-direction: column;
+    }
+  }
+
+  // .hero__link
+
+  &__link {
+    flex: 0 1 183px;
+    padding: 15px 10px;
+    height: 44px;
+
+    @media (max-width: $breakpoint480) {
+      flex: 0 1 auto;
+      width: 100%;
+    }
+  }
+}

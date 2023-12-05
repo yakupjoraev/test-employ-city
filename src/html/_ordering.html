@@ -1,0 +1,111 @@
+<section class="ordering">
+  <div class="container">
+    <div class="ordering__inner">
+      <div class="ordering__header">
+        <h3 class="ordering__title">Оформление <span>Заказа</span></h3>
+        <p class="ordering__attantion">Перед заполнением формы ознакомьтесь с нашей схемой работы!</p>
+      </div>
+
+      <div class="ordering__steps">
+        <div class="ordering__step">
+          <div class="ordering__step-picture">
+            <img src="./img/ordering/search.svg" alt="icons search">
+          </div>
+
+          <p class="ordering__step-descr">Lorem ipsum dolor
+            sit amet</p>
+        </div>
+
+        <div class="ordering__step">
+          <div class="ordering__step-picture">
+            <img src="./img/ordering/percent.svg" alt="icons percent">
+          </div>
+
+          <p class="ordering__step-descr">Сonsecteturadipiscing elit</p>
+        </div>
+
+        <div class="ordering__step">
+          <div class="ordering__step-picture">
+            <img src="./img/ordering/file.svg" alt="icons file">
+          </div>
+
+          <p class="ordering__step-descr">Sed do eiusmod tempor</p>
+        </div>
+
+        <div class="ordering__step">
+          <div class="ordering__step-picture">
+            <img src="./img/ordering/message.svg" alt="icons message">
+          </div>
+
+          <p class="ordering__step-descr">Esse cillum dolore
+            eu fugiat</p>
+        </div>
+
+        <div class="ordering__step">
+          <div class="ordering__step-picture">
+            <img src="./img/ordering/money.svg" alt="icons money">
+          </div>
+
+          <p class="ordering__step-descr">Excepteur sint occaecat cupidatat non proident</p>
+        </div>
+      </div>
+
+      <form action="#" class="ordering__form form">
+        <div class="form__inner">
+          <div class="form__row">
+            <div class="form__group">
+              <select class="form__select" name="Выбранный тип системы: " placeholder="Выберите тип системы">
+                <option disabled selected hidden value="">Выберите тип системы </option>
+                <option value="Nemo enim ipsam">Nemo enim ipsam </option>
+                <option value="Et harum quidem">Et harum quidem</option>
+                <option value="Temporibus autem">Temporibus autem</option>
+                <option value="Itaque earum rerum">Itaque earum rerum</option>
+                <option value="Nemo enim ipsam">Nemo enim ipsam </option>
+                <option value="Et harum quidem">Et harum quidem</option>
+                <option value="Temporibus autem">Temporibus autem</option>
+                <option value="Itaque earum rerum">Itaque earum rerum</option>
+                <option value="Nemo enim ipsam">Nemo enim ipsam </option>
+                <option value="Et harum quidem">Et harum quidem</option>
+                <option value="Temporibus autem">Temporibus autem</option>
+                <option value="Itaque earum rerum">Itaque earum rerum</option>
+              </select>
+            </div>
+
+            <div class="form__group">
+              <input class="form__input" type="email" name="Ваш e-mail: " placeholder="Ваш e-mail" data-js-input
+                data-js-input-email>
+            </div>
+            <div class="form__group">
+              <input class="form__input" type="text" name="Ваше имя: " placeholder="Ваше имя" data-js-input>
+            </div>
+          </div>
+
+          <div class="form__row">
+            <div class="form__range">
+              <label class="form__range-label">
+                <span> Sed ut perspiciatis, unde omnis iste natus</span>
+
+                <span id="percentageLabel">0%</span>
+              </label>
+              <input type="range" id="customRangeInput" class="form__range-slider" min="0" max="100" value="0" step="1"
+                oninput="updatePercentage(this)">
+
+            </div>
+
+            <div class="form__file">
+              <label class="form__file-label" for="customFileInput">
+                <img src="./img/icons/file-input.svg" alt="icon file-input">
+
+                <span data-custom-file-label>Прикрепить файл</span>
+              </label>
+              <input type="file" id="customFileInput" style="display: none;" onchange="updateFileName(this)"
+                data-custom-file-input>
+            </div>
+          </div>
+
+          <button type="submit" class="form__btn primary-btn">Отправить</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>

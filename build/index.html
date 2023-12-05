@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LOREMIPSUM.NET</title>
+  <link rel="stylesheet" href="./css/style.min.css">
+</head>
+
+<body class="main__body">
+  <!-- Header -->
+  <header class="header">
+  <!-- Navbar -->
+  <nav class="nav">
+    <div class="container">
+      <div class="navbar">
+        <div class="logo"> <a class="logo__link" href="#"> <img class="logo__img" src="./img/logo.svg" alt="logo"> </a>
+        </div>
+        <ul class="menu">
+          <li class="menu__item active"><a href="#" class="menu__item-link" data-scroll>Бизнес</a></li>
+          <li class="menu__item"><a href="#" class="menu__item-link" data-scroll>О нас</a></li>
+          <li class="menu__item"><a href="#" class="menu__item-link" data-scroll>Цены</a></li>
+          <li class="menu__item"><a href="#" class="menu__item-link" data-scroll>Оформить заказ</a></li>
+        </ul>
+        <div class="burger">
+          <span></span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+
+  <!-- Main Page -->
+  <main class="main">
+    <section class="hero">
+  <div class="container">
+    <div class="hero__inner">
+      <h1 class="hero__title">
+        <span> Lorem ipsum </span>
+        dolor sit <br>
+        ametconsectetur <span>adipiscing</span>
+      </h1>
+
+      <h2 class="hero__subtitle">At vero eos et accusamus et iusto odio dignissimos ducimus!</h2>
+
+      <ul class="hero__benifits">
+        <li class="hero__benifits-item">Totam rem aperiam eaque ipsa</li>
+        <li class="hero__benifits-item">Sit voluptatem accusantium doloremque laudantium</li>
+        <li class="hero__benifits-item">Sed ut perspiciatis, unde omnis iste natus error</li>
+      </ul>
+
+      <div class="hero__links">
+        <a class="hero__link primary-btn" href="#">заказать</a>
+        <a class="hero__link secondary-btn" href="#">подробнее</a>
+      </div>
+    </div>
+  </div>
+</section>
+    <section class="ordering">
+  <div class="container">
+    <div class="ordering__inner">
+      <div class="ordering__header">
+        <h3 class="ordering__title">Оформление <span>Заказа</span></h3>
+        <p class="ordering__attantion">Перед заполнением формы ознакомьтесь с нашей схемой работы!</p>
+      </div>
+
+      <div class="ordering__steps">
+        <div class="ordering__step">
+          <div class="ordering__step-picture">
+            <img src="./img/ordering/search.svg" alt="icons search">
+          </div>
+
+          <p class="ordering__step-descr">Lorem ipsum dolor
+            sit amet</p>
+        </div>
+
+        <div class="ordering__step">
+          <div class="ordering__step-picture">
+            <img src="./img/ordering/percent.svg" alt="icons percent">
+          </div>
+
+          <p class="ordering__step-descr">Сonsecteturadipiscing elit</p>
+        </div>
+
+        <div class="ordering__step">
+          <div class="ordering__step-picture">
+            <img src="./img/ordering/file.svg" alt="icons file">
+          </div>
+
+          <p class="ordering__step-descr">Sed do eiusmod tempor</p>
+        </div>
+
+        <div class="ordering__step">
+          <div class="ordering__step-picture">
+            <img src="./img/ordering/message.svg" alt="icons message">
+          </div>
+
+          <p class="ordering__step-descr">Esse cillum dolore
+            eu fugiat</p>
+        </div>
+
+        <div class="ordering__step">
+          <div class="ordering__step-picture">
+            <img src="./img/ordering/money.svg" alt="icons money">
+          </div>
+
+          <p class="ordering__step-descr">Excepteur sint occaecat cupidatat non proident</p>
+        </div>
+      </div>
+
+      <form action="#" class="ordering__form form">
+        <div class="form__inner">
+          <div class="form__row">
+            <div class="form__group">
+              <select class="form__select" name="Выбранный тип системы: " placeholder="Выберите тип системы">
+                <option disabled selected hidden value="">Выберите тип системы </option>
+                <option value="Nemo enim ipsam">Nemo enim ipsam </option>
+                <option value="Et harum quidem">Et harum quidem</option>
+                <option value="Temporibus autem">Temporibus autem</option>
+                <option value="Itaque earum rerum">Itaque earum rerum</option>
+                <option value="Nemo enim ipsam">Nemo enim ipsam </option>
+                <option value="Et harum quidem">Et harum quidem</option>
+                <option value="Temporibus autem">Temporibus autem</option>
+                <option value="Itaque earum rerum">Itaque earum rerum</option>
+                <option value="Nemo enim ipsam">Nemo enim ipsam </option>
+                <option value="Et harum quidem">Et harum quidem</option>
+                <option value="Temporibus autem">Temporibus autem</option>
+                <option value="Itaque earum rerum">Itaque earum rerum</option>
+              </select>
+            </div>
+
+            <div class="form__group">
+              <input class="form__input" type="email" name="Ваш e-mail: " placeholder="Ваш e-mail" data-js-input
+                data-js-input-email>
+            </div>
+            <div class="form__group">
+              <input class="form__input" type="text" name="Ваше имя: " placeholder="Ваше имя" data-js-input>
+            </div>
+          </div>
+
+          <div class="form__row">
+            <div class="form__range">
+              <label class="form__range-label">
+                <span> Sed ut perspiciatis, unde omnis iste natus</span>
+
+                <span id="percentageLabel">0%</span>
+              </label>
+              <input type="range" id="customRangeInput" class="form__range-slider" min="0" max="100" value="0" step="1"
+                oninput="updatePercentage(this)">
+
+            </div>
+
+            <div class="form__file">
+              <label class="form__file-label" for="customFileInput">
+                <img src="./img/icons/file-input.svg" alt="icon file-input">
+
+                <span data-custom-file-label>Прикрепить файл</span>
+              </label>
+              <input type="file" id="customFileInput" style="display: none;" onchange="updateFileName(this)"
+                data-custom-file-input>
+            </div>
+          </div>
+
+          <button type="submit" class="form__btn primary-btn">Отправить</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+  <div class="container">
+    <div class="footer__inner">
+      <p class="footer__copy">
+        © 2018 «LoremIpsum.net» Все права защищены.
+      </p>
+
+      <div class="footer__border"></div>
+
+      <ul class="footer__wallets">
+        <li class="footer__wallet">
+          <img src="./img/icons/qiwi.svg" alt="icon Qiwi wallet">
+          <p>Qiwi wallet</p>
+        </li>
+
+        <li class="footer__wallet">
+          <img src="./img/icons/yandex-money.svg" alt="icon Yandex Money">
+          <p>Qiwi wallet</p>
+        </li>
+
+        <li class="footer__wallet">
+          <img src="./img/icons/web-money.svg" alt="icon Web Money">
+          <p>Web Money</p>
+        </li>
+      </ul>
+
+      <div class="footer__border"></div>
+
+
+      <ul class="footer__contacts">
+
+        <li class="footer__contact">
+          <a class="footer__contact-link" href="mailto:mail">
+            <img src="./img/icons/mail.svg" alt="icon mail">
+            <span>info@ipsum228.com</span>
+          </a>
+        </li>
+
+        <li class="footer__contact">
+          <a class="footer__contact-link" href="#">
+            <img src="./img/icons/vk.svg" alt="icon vk">
+            <span>Мы вконтакте</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+</body>
+
+<script src="./js/scripts.min.js"></script>
+
+</html>
